@@ -868,6 +868,10 @@ h6 {
     color: #fa923d;
   }
 
+  .menu__link::after {
+    display: none;
+  }
+
   .icon-menu {
     display: block;
     position: relative;
