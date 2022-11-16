@@ -197,14 +197,6 @@ h6 {
   position: relative;
 }
 
-.menu-open .menu__body {
-  left: 0;
-  -webkit-transition: all 0.7s ease 0s;
-  -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
-  z-index: 5;
-}
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,10 +252,6 @@ h6 {
   -webkit-transition: all 0.7s ease 0.6s;
   -o-transition: all 0.7s ease 0.6s;
   transition: all 0.7s ease 0.6s;
-}
-
-.icon-menu {
-  display: none;
 }
 
 @-webkit-keyframes underscored {
@@ -575,8 +563,8 @@ h6 {
 
 .address-maps__text {
   color: #FFFFFF;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.125rem;
+  line-height: 1.7777777778;
   font-weight: 500;
 }
 
@@ -778,151 +766,15 @@ h6 {
 
 @media (max-width: 47.99875em) {
   .header__logo p {
-    font-size: 1.375rem;
-  }
-
-  .menu__body {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    height: 100%;
-    background-color: #FFFFFF;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: none;
-    -webkit-box-shadow: 0px 0px 5px 0px grey;
-            box-shadow: 0px 0px 5px 0px grey;
-  }
-
-  .menu__body::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(248, 201, 145, 0.3);
-  }
-
-  .menu__list {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0px 1.25rem;
-    gap: 0.625rem 0rem;
-  }
-
-  .menu__item {
-    -webkit-transform: translate(-300%, 0px);
-        -ms-transform: translate(-300%, 0px);
-            transform: translate(-300%, 0px);
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 0.0625rem solid #fa923d;
-    border-radius: 0.9375rem;
-  }
-
-  .menu-open .menu__item {
-    -webkit-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-    -webkit-transition: all 0.7s ease 0s;
-    -o-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-  }
-
-  .menu-open .menu__item:nth-child(1) {
-    -webkit-transition-delay: 0.2s;
-         -o-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-  }
-
-  .menu-open .menu__item:nth-child(2) {
-    -webkit-transition-delay: 0.4s;
-         -o-transition-delay: 0.4s;
-            transition-delay: 0.4s;
-  }
-
-  .menu__link {
-    font-size: 1.75rem;
-    color: #fa923d;
-  }
-
-  .menu__link::after {
     display: none;
   }
 
-  .icon-menu {
-    display: block;
-    position: relative;
-    width: 1.875rem;
-    height: 1.125rem;
-    cursor: pointer;
-    z-index: 6;
+  .menu__list {
+    gap: 1.25rem;
   }
 
-  .icon-menu span,
-  .icon-menu::before,
-  .icon-menu::after {
-    content: "";
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    height: 0.125rem;
-    background-color: #fa923d;
-  }
-
-  .icon-menu::before {
-    top: 0;
-  }
-
-  .icon-menu::after {
-    bottom: 0;
-  }
-
-  .icon-menu span {
-    top: calc(50% - 0.0625rem);
-  }
-
-  .menu-open .icon-menu span {
-    width: 0;
-  }
-
-  .menu-open .icon-menu::before {
-    top: calc(50% - 0.0625rem);
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-
-  .menu-open .icon-menu::after {
-    bottom: calc(50% - 0.0625rem);
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+  .menu__link:after {
+    display: none;
   }
 
   .main-block__body {
